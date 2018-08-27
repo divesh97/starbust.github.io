@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link rel="stylesheet" type="text/css" href="Grid.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="ionicons-2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" type="text/css" href="animate.css">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla One" rel="stylesheet" type="text/css">
+	</head>
+	
+	
+	<body>
+		<!--HamBurger Icon-->
+<div class="bars" id="nav-action">
+  <span class="bar"> </span>
+</div>
+
+<!--Navbar Links-->
+<nav id="nav">
+  <ul>
+    <li class="shape-circle circle-one"><a href="#">Social Media Marketing</a></li>
+    <li class="shape-circle circle-two"><a href="#">Video Editing</a></li>
+    <li class="shape-circle circle-three"><a href="#">Website Development</a></li>
+    <li class="shape-circle circle-five"><a href="#">Our Work</a>
+    </li>
+  </ul>
+</nav>
+		<script>
+	// Setting up the Variables
+var bars = document.getElementById("nav-action");
+var nav = document.getElementById("nav");
+
+
+//setting up the listener
+bars.addEventListener("click", barClicked, false);
+
+
+//setting up the clicked Effect
+function barClicked() {
+  bars.classList.toggle('active');
+  nav.classList.toggle('visible');
+}
+</script>
+		<header class="h">
+			<div class="row">
+				<h1 class="frame-1"><span class="h1 h2">&#9733;</span>Starbust <span class="h1 frame-2">Solutions</span></h1>
+				<p class="frame-3">Website Development| Videomaking and Editing | Social Media Management</p>
+			</div>
+			<div class="row menu">
+			<ul>
+  				<li><div class="image"><img class="ss" src="ss1.jpg"></div>
+    			<div class="shadow"></div>
+  				</li>
+  				<li><div class="image"><img class="ss" src="ss2.jpg"></div>
+    			<div class="shadow"></div>
+  				</li>
+				<li>
+				<div class="image"><img class="ss" src="ss3.jpg"></div>
+				<div class="shadow"></div>
+				</li>
+			</ul>
+		</div>
+		</header>
+	
+	<section class="work">
+		<h2 class="workh">Our <span class="h1">Work</span></h2>
+		<p class="p1">Take a look at our line of work</p>
+		<div class="row wrapper">
+			<div>
+			<button class="demo1" onclick="currentDiv1(1)">Website Development</button> 
+  			<button class="demo2" onclick="currentDiv1(2)">Video Editing</button> 
+  			<button class="demo3" onclick="currentDiv1(3)">Social Media</button></div>
+			<div><button class="b1" onclick="plusDivs1(-1)">&#8592;</button></div>
+			<div><button class="b2" onclick="plusDivs1(1)">&#8594;</button></div>
+			<div>
+  				<img class="mySlides" src="webdevelopment.jpg">
+  				<img class="mySlides" src="videoediting.jpg">
+  				<img class="mySlides" src="socialmedia.jpg">
+			</div>
+			</div>
+<script>
+var slideIndex = 1;
+showDivs1(slideIndex);
+
+function plusDivs1(n) {
+  showDivs1(slideIndex += n);
+}
+
+function currentDiv1(n) {
+  showDivs1(slideIndex = n);
+}
+
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+		<div class="row web js--wp-1">
+			<h2>Website <span class="h1">Development</span></h2>
+			<p>We design websites which suits you best. Crafting new designs everyday.</p>
+			<img class="webd" src="wd2.png">
+			<div class="row webd1">
+			<div class="col span-1-of-5 box">
+				<img class="discover" src="discovery.png" alt="discover">
+				<h3>Discover</h3>
+				<p>Leaving no stones unturned, we'll provide you with a project specification and brainstorm some ideas with you.</p>
+			</div>
+			<div class="col span-1-of-5 box">
+				<img class="discover" src="design.png" alt="discover">
+				<h3>Design</h3>
+				<p>Now we design the wireframe so you can see what your website will look like. We'll spend time in this stage until your website looks like how you want it. </p>
+			</div>
+			<div class="col span-1-of-5 box">
+				<img class="discover" src="develop.png" alt="discover">
+				<h3>Develop</h3>
+				<p>Once you approve the final look of your website we turn the nerd up a notch and our developers get started with the coding</p>
+			</div>
+			<div class="col span-1-of-5 box">
+				<img class="discover" src="deploy.png" alt="discover">
+				<h3>Deploy</h3>
+				<p>Show your site to the world! We work carefully with your team throughout the process enabling a smooth transition.</p>
+			</div>
+				<div class="col span-1-of-5 box">
+					<img class="discover" src="delight.png" alt="discover">
+				<h3>Delight</h3>
+				<p>Now that you have an awesome website we want to keep it awesome. We are always available for any questions and updates you may need.</p>
+			</div>
+				</div>
+			</div>
+		<div class="row video js--wp-2">
+			<h2>Video Making <span class="h1">and Editing</span></h2>
+			<p>We have the talent, you have the dream</p>
+			<img class="videom" src="videomaking.jpg" alt="video">
+			<div class="row v">
+				<div class="col span-1-of-3 box1">
+					<img src="preproduction1.jpg" alt="preproduction">
+					<h3>Pre-Production</h3>
+					<h4>Conceptulization</h4>
+					<p>Stage at which an idea is molded into a viable video.</p>
+					<h4>Scripting</h4>
+					<p>Typically a collaboration with cilent where the words for the script are formulated and finessed.</p>
+					<h4>Storyboarding</h4>
+					<p>A handy tool developed by the producing team typically to visualize more complex video ideas.</p>
+				</div>
+				<div class="col span-1-of-3 box1">
+					<img src="production1.jpg" alt="preproduction">
+					<h3>Production</h3>
+					<h4>Coordination</h4>
+					<p>Producers responsibility to plan for resouces locations and personnel.</p>
+					<h4>Video Acquisition</h4>
+					<p>Any original video footage that needs to be captured.</p>
+					<h4>Screen Capturing</h4>
+					<p>Screen movement or display from a website to be used in final edited segment.</p>
+				</div>
+				<div class="col span-1-of-3 box1">
+					<img src="postproduction1.jpg" alt="preproduction">
+					<h3>Post-Production</h3>
+					<h4>Video Editing</h4>
+					<p>Software enabled process of assembling all the individual video elements.</p>
+					<h4>Motion Graphics</h4>
+					<p>Creation of graphic elements and the movements on screen.</p>
+					<h4>Mastering</h4>
+					<p>Saving the video into aprropriate file formats for delivery.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row socialmedia js--wp-3">
+			<h2>Social Media <span class="h1">and Marketing</span></h2>
+			<p class="a">Intimate your business with social life</p>
+			<div class="row sm">
+				<div class="col span-1-of-2 box2">
+					<img class="sm1" src="sm.jpg" alt="socialmedia">
+				</div>
+				<div class="col span-1-of-2 box2 sm3">
+						<h3>Visibility</h3>
+						<p>Social media is one of the most stress-free and profitable digital marketing platforms that can be used to increase your business visibility. By applying a social media strategy, it will help you significantly increase your brand recognition.</p>
+						<h3>Connectivity</h3>
+						<p>Social media is a good way for engaging and interacting customers. The more you communicate with the audience, the more chances you have of conversion. Set up a two-way communication with your target audience so that their wishes are known and their interest is catered with ease.</p>
+						<h3>Branding</h3>
+						<p>When you have a social media presence, you make it easier for your customers to find you and connect with you. By connecting with your customers through social media, you are more probable to upsurge customer retention and customer loyalty. Since developing a loyal customer base is one of the main goals of almost any business. </p>
+				</div>
+			</div>
+			<img class="sm2" src="sm1.jpg" alt="socialmedia">
+		</div>
+		<div class="row review">
+			<h2>Testimonials</h2>
+			<p>Our customers are happy with us</p>
+			<img src="customer.png" class="customer">
+			<div class="row ms1">
+				<div class="col span-1-of-3 box3">
+					<img src="Customer1.png" class="c1">
+					<blockquote>
+            		Write a review here
+                <cite>Milton Chapman</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-3 box3">
+					<img src="Customer1.png" class="c1">
+					<blockquote>
+            		Write a review here
+                <cite>Milton Chapman</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-3 box3">
+					<img src="Customer1.png" class="c1">
+					<blockquote>
+            		Write a review here
+                <cite>Milton Chapman</cite>
+					</blockquote>
+				</div>
+			</div>
+			<div class="row ms1">
+				<div class="col span-1-of-3 box3">
+					<img src="Customer1.png" class="c1">
+					<blockquote>
+            		Write a review here
+                <cite>Cutomer 4</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-3 box3">
+					<img src="Customer1.png" class="c1">
+					<blockquote>
+            		Write a review here
+                <cite>Customer 5</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-3 box3">
+					<img src="Customer1.png" class="c1">
+					<blockquote>
+            		Write a review here
+                <cite>Customer 6</cite>
+					</blockquote>
+				</div>
+			</div>
+    <span class="w3-badge d1" onclick="currentDiv(1)"></span>
+    <span class="w3-badge d2" onclick="currentDiv(2)"></span>
+			<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("ms1");
+  var dots = document.getElementsByClassName("w3-badge");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+		</div>
+</section>
+<footer>
+	<div class="col span-1-of-4 f1">
+		<h3>Address</h3>
+		<i class="ion-location"></i>
+		<p>Plot no:532,</p>
+		<p>Sector No.25,</p>
+		<p>Pradhikaran,</p> 
+		<p>Nigdi,</p>
+		<p>Pune-411044</p>
+	</div>
+	<div class="col span-1-of-4 f1">
+		<h3>Contact Us</h3>
+		<i class="ion-android-call"></i>
+		<p>Laukik:+91 9623010870</p>
+		<p>Tushar:+91 9765123862</p>
+	</div>
+	<div class="col span-1-of-4 f1">
+		<h3>E-mail</h3>
+		<i class="ion-email"></i>
+		<p>laukikkakade@starbustsolutions.com</p>
+		<p>tusharathare@starbustsolutions.com</p>
+	</div>
+	<div class="col span-1-of-4 f1">
+		<h3>Social Links</h3>
+		<a href="#"><i class="ion-social-facebook"></i></a>
+		<a href="#"><i class="ion-social-twitter"></i></a>
+		<a href="#"><i class="ion-social-googleplus"></i></a>
+		<a href="#"><i class="ion-social-instagram"></i></a>
+	</div>
+	<div class="f2">
+		<p><span class="h1">&#9733;</span>Starbust <span class="h1"> Solutions</span></p>
+		<p>&copy; All Rights reserved</p>
+	</div>
+</footer>
+	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+</body>	
+</html>
+		
+	
